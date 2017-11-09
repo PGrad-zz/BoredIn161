@@ -28,8 +28,8 @@ let game = new Game(
 game.renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(game.renderer.domElement);
 let loader = new THREE.TextureLoader();
-let sun = new CelestialObject();
-let pair_sun = new CelestialObject();
+let sun = new Star();
+let pair_sun = new Star();
 let earth = new CelestialObject();
 let moon = new CelestialObject();
 loader.load('./assets/water.jpg', skip);
